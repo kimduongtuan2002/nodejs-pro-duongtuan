@@ -1,4 +1,6 @@
-const express = require("express"); //take library
+
+import express from "express";
+
 const app = express(); //create object
 const port = 3000;
 
