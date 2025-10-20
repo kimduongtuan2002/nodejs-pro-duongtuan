@@ -1,0 +1,26 @@
+{
+  "name": "duong-tuan-nodejs",
+  "version": "1.0.0",
+  "description": "Learn code nodejs beginner",
+  "keywords": [
+    "duong-tuan"
+  ],
+  "homepage": "https://github.com/kimduongtuan2002/nodejs-pro-duongtuan#readme",
+  "bugs": {
+    "url": "https://github.com/kimduongtuan2002/nodejs-pro-duongtuan/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimduongtuan2002/nodejs-pro-duongtuan.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Kim Dương Tuấn",
+    "email": "kimduongtuan2002@gmail.com"
+  },
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
