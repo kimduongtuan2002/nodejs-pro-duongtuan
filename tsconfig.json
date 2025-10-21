@@ -5,6 +5,9 @@
     "target": "es6",
     "sourceMap": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    //này là cấu hình khi chạy code npx tsc (build file ts -> js) thì chỉ build từ trong folder src ngượi lại thì không xử lý
+    "rootDir": "src"      
+    
   }
 }
