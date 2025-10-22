@@ -10,7 +10,11 @@ const port = process.env.PORT || 8080;
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
+// get file router
 webRoutes(app);
+
+// config static file: image, css, js file
+app.use(express.static('public'));
 
 
 
