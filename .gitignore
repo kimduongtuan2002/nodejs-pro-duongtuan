@@ -1,4 +1,5 @@
 node_modules
 dist
+promt-install-node-js
 # lưu ý khi public trên github thì không nên để file .env để tránh xâm nhập trái phép
 # .env
