@@ -1,0 +1,35 @@
+
+
+##này là câu hình để chạy câu lệnh đề build file ts -> js và tự động chạy trên localhost
+"start": "tsc && node dist/app.js",
+"dev": "tsc && node dist/app.js"
+
+## Câu lệnh cài nodemon (công cụ để setup chạy localhost khi code tự động restart localhost)
+npm i --save-exact --save-dev nodemon@3.1.9 ts-node@10.9.2
+//này là cấu hình file trong package.json
+"nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "node_modules"
+    ],
+    "exec": "ts-node ./src/app.ts"
+  },
+
+## câu lệnh cài package đọc file .env (Biến môi trường (.env))
+npm install --save-exact dotenv@16.4.7
+
+
+3. Cấu hình EJS cho project
+
+Tài liệu: https://github.com/mde/ejs https://ejs.co/
+Cài đặt EJS https://www.npmjs.com/package/ejs
+#PROMT
+npm install --save-exact ejs@3.1.10
+npm i --save-exact --save-dev @types/ejs@3.1.5
+
+https://expressjs.com/en/5x/api.html#app.set
+
+views, the directory where the template files are located. Eg: app.set('views', './views'). This defaults to the views directory in the application root
