@@ -23,7 +23,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start:debug": "nodemon --inspect=9229 -e ts,tsx --exec node -r ts-node/register ./src/app.ts"
   },
   "nodemonConfig": {
     "watch": [
@@ -48,4 +49,6 @@
     "ts-node": "10.9.2",
     "typescript": "5.7.3"
   }
+
+ 
 }

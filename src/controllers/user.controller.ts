@@ -1,4 +1,5 @@
-import { Request, Response } from "express";
+import e, { Request, Response } from "express";
+import { handleCreateUser } from "../services/user-create";
 
 const getHomePage = (rep: Request, res: Response) => { 
    return res.render("home.ejs")
@@ -9,7 +10,11 @@ const getCreateUserPage = (rep: Request, res: Response) => {
 };
 
 const postCreateUser = (req: Request, res: Response) => {
-    console.log(">>> Check Body: ", req.body);
+   const { fullName, email, address } = req.body; //get data objects
+   
+   // Handle create user
+   handleCreateUser(fullName, email, address);
+
    return res.redirect("/")
 };
 
