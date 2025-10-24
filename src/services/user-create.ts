@@ -1,3 +1,4 @@
+import getConnection from "../config/database";
 
 
 const handleCreateUser = (fullName: String, email: String, address: String) => {
@@ -9,4 +10,17 @@ const handleCreateUser = (fullName: String, email: String, address: String) => {
 
 };
 
-export { handleCreateUser };
+const getAllUsers = async() => {
+    const connection = await getConnection();
+
+    try {
+    const [results, fields] = await connection.query(
+        'SELECT * FROM `users`'
+    );
+        return results;
+    } catch (err) {
+        return [];
+    }
+};
+
+export { handleCreateUser, getAllUsers };
