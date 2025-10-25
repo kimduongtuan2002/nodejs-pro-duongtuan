@@ -17,7 +17,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
-                <button class="btn btn-warning">Create user</button>
+                <a href="/create-user" class="btn btn-warning">Create user</a>
             </div>
         </div>
        
@@ -39,7 +39,14 @@
                         <td><%= user.email %></td>
                         <td><%= user.address %></td>
                         <td>
-                            <button class="btn btn-danger">Delete</button>
+                            <div class="" style="display: flex; gap: 20;">
+                                <form action="/handle-detail-user/<%= user.id %>" method="post">
+                                    <button type="submit" class="btn btn-warning" style="margin-right: 20;">View</button>
+                                </form>
+                                <form action="/handle-delete-user/<%= user.id %>" method="post">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </div>
                         </td>
                     </tr>
                 <% }) %>

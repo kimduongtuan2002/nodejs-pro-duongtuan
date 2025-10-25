@@ -6,8 +6,15 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "outDir": "dist",
-    //này là cấu hình khi chạy code npx tsc (build file ts -> js)
-    "rootDir": "src"      
-    
+    //này là cấu image khi run code npx tsc (build file ts -> js)
+    "rootDir": "src",
+    "baseUrl": ".", //config current location manager  
+    "paths": {
+      "config/*": ["./src/config/*"],
+      "controllers/*": ["./src/controllers/*"],
+      "models/*": ["./src/models/*"],
+      "routes/*": ["./src/routes/*"],
+      "services/*": ["./src/services/*"],
+    } 
   }
 }
