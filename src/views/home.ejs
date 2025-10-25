@@ -40,7 +40,7 @@
                         <td><%= user.address %></td>
                         <td>
                             <div class="" style="display: flex; gap: 20;">
-                                <form action="/handle-detail-user/<%= user.id %>" method="post">
+                                <form action="/handle-view-user/<%= user.id %>" method="get">
                                     <button type="submit" class="btn btn-warning" style="margin-right: 20;">View</button>
                                 </form>
                                 <form action="/handle-delete-user/<%= user.id %>" method="post">
